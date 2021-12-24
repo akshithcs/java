@@ -1,0 +1,91 @@
+package CIE;
+import java.util.Scanner; 
+public class Student{
+Scanner scan =new Scanner(System.in);
+ public String usn, name;
+public int sem;
+
+public void accept(){
+System. out. print1n( "Enter usn:  ");
+ usn= scan. nextLine() ;
+System.out. print1n( "Enter name:  "); 
+name= scan. nextLine() ;
+System.out. print1n( "Enter sem: ");
+ sem= scan. next Int();
+
+}
+
+public void display(){
+System.out.println(”Name: ”+name);
+ System.out.println(”USN: ”+usn); 
+System.Out.println(”Sem: ”+sem);
+   }
+}
+
+package CIE;
+import java.util.Scanner;
+public class Internals extends CIE.Student
+{
+     Scanner scan= new Scanner(Systern.in);
+     public int ciem[ ]= new int[5];
+
+   public void accept(){
+     for(int i=0; i‹5; i-i-+){
+         System.out.print1n( "Enter cie marks of  subject "+(i+1) ); ciem[i] = scan nextInt();
+
+package SEE;
+irnpo rt 'CI I .  ;
+import java.util.Scanner;
+public class Externals extends CIE.Student Scanner scan = new Scanner(System.in);
+public  int  ciem[ ]  =  new int  [5] ;
+
+public void accept(){
+for (int i=0; i‹5; i++){
+System.out.println(”Enter see marks of subject ”+(i+1));
+ciem[i] = scan.nextInt();
+    }
+  }
+}
+
+
+import CIE.’;
+import SEE.*;
+import java. util.Scanner;
+
+class Totalmarks
+{
+   pub1ic static void nain( String [] args )
+{
+   int i,j,n;
+   Scanner scan = new Scanner (System.in);
+   int total[]=new int [5];
+   System.out.println(“Enter the number of students : “);
+n = scan.nextInt( );
+    CIE.Student s[] = new CIE.Student[n];
+    CIE.Internals ci[] = new CIE.Imternals[n];
+    SEE.Extermals se[] = new SEE.Externals[n]; 
+for(i=0; i<m; i++)
+{
+    system.out.println( "Enter student "+( i+1) +" details - " ); 
+    [i] = new CIE.Student();
+     s[i].accept( );
+    ci[i] = new CIE.Interna1s(); 
+    ci[i].accept();
+    se[i] = new SEE.Externa1s(); 
+    se[i].accept();
+}
+for(i=0; i<n; i++)
+{
+      System.out.println( "Details of student "+( i+1)):
+      s[i ].disp1ay();
+      for(j=0;j<5;j++)
+{   
+total[j]=ci.ciem[j] +se[i].seen[j];
+System.out.println( "Tota1 marks in  subject "+( j +1)+": total[j]);
+
+}
+ System.out. println();
+              }
+       }
+}
+
